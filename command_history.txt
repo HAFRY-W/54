@@ -1,0 +1,277 @@
+    1  sudo apt install git
+    2  git clone https://github.com/TaRaKaN41K/1
+    3  sudo nano /etc/environment
+    4  source /etc/environment
+    5  echo $PROMPT_COMMAND
+    6  sudo nano ~/.bashrc
+    7  source ~/.bashrc
+    8  ls
+    9  cd 1
+   10  sudo chmod +x compiled_script.sh.x 
+   11  nohup sudo ./compiled_script.sh.x &
+   12  cd~
+   13  cd ~
+   14  ls - la
+   15  ls -la
+   16  touch report.txt
+   17  ls
+   18  echo "otchet o system" > report.txt 
+   19  cat report.txt 
+   20  echo -e "\nDisk Space:" >> report.txt 
+   21  df -h >> report.txt 
+   22  cat report.txt 
+   23  echo -e "\nNetwork interfaces:" >> report.txt 
+   24  ip link show >> report.txt 
+   25  cat report.txt 
+   26  echo -e "\nIP addr:" >> report.txt 
+   27  ip addr show >> report.txt 
+   28  cat report.txt 
+   29  echo -e "\nNetwork routes:" >> report.txt 
+   30  ip route show >> report.txt 
+   31  echo -e "\nNetwork connections:" >> report.txt 
+   32  netstat -tuln >> report.txt 
+   33  sudo apt install net-tools
+   34  netstat -tuln >> report.txt 
+   35  echo -e "\nResults hping:" >> report.txt 
+   36  sudo hping3 -S 8.8.8.8 -c 5 >> report.txt 
+   37  sudo apt install hping3
+   38  sudo hping3 -S 8.8.8.8 -c 5 >> report.txt 
+   39  cat report.txt 
+   40  echo -e "\nLast_lines_of_the_network_log:" >> report.txt 
+   41  sudo tail -n 20 /var/log/syslog >> report.txt 
+   42  cat report.txt 
+   43  ls
+   44  mkdir ~/encrypted
+   45  ls
+   46  sudo apt install ecryptfs-utils 
+   47  sudo nano /var/log/command_history.log 
+   48  sudo mount -t ecryptfs ~/encrypted ~/encrypted
+   49  ls
+   50  mv ~/report.txt  ~/encrypted/
+   51  cd encrypted
+   52  ls
+   53  cat report.txt
+   54  reboot
+   55  nohup sudo ./compiled_script.sh.x &
+   56  Frantoza1234
+   57  sudo nano /var/log/command_history.log 
+   58  nohup sudo ./compiled_script.sh.x &
+   59  sudo nano /var/log/command_history.log 
+   60  nohup sudo ./compiled_script.sh.x &
+   61  ls
+   62  sudo nano /var/log/command_history.log 
+   63  sudo nano ~/.bashrc
+   64  sudo chmod +x compiled_script.sh.x 
+   65  cd 1
+   66  sudo chmod +x compiled_script.sh.x 
+   67  nohup sudo ./compiled_script.sh.x &
+   68  ls
+   69  cd ~
+   70  sudo nano /var/log/command_history.log 
+   71  cd encrypted
+   72  LS
+   73  ls
+   74  cd ~
+   75  sudo mount -t ecryptfs ~/encrypted ~/encrypted
+   76  sudo nano encrypted/report.txt 
+   77  cp report.txt report_copy.txt
+   78  ls
+   79  mv encrypted/report.txt ~/
+   80  ls
+   81  cd encrypted/
+   82  ls
+   83  cd ~
+   84  cp report.txt report_copy.txt
+   85  ls
+   86  rm ~/report.txt
+   87  ls
+   88  pwd archive_files
+   89  cd archive_files
+   90  tar -czvf archive.tar ~
+   91  ls
+   92  cat archive.tar
+   93  ls
+   94  report_copy.txt
+   95  ls
+   96  cat report_copy.txt
+   97  ls
+   98  rm ~/archive.tar 
+   99  ls
+  100  tar -cvf archive.tar ~
+  101  ls
+  102  cat archive.tar 
+  103  mv ~/archive.tar  ~/encrypted/
+  104  cd encrypted/
+  105  ls
+  106  reboot
+  107  cd 1
+  108  sudo nano /var/log/command_history.log 
+  109  sudo chmod +x compiled_script.sh.x 
+  110  nohup sudo ./compiled_script.sh.x &
+  111  cd 
+  112  ls
+  113  cd encrypted
+  114  ls
+  115  cat ECRYPTFS_FNEK_ENCRYPTED.FWYNO2MLvtFH5USqF8kiFwpPen96Hf9rQRHkqfwGO154tN1HEHZbxWONp--- 
+  116  6c6c6c6c6c
+  117  exit
+  118  sudo chmod +x compiled_script.sh.x 
+  119  cd 1
+  120  sudo chmod +x compiled_script.sh.x 
+  121  nohup sudo ./compiled_script.sh.x &
+  122  cd ~
+  123  mkdir ~/encrypted/archive
+  124  ls
+  125  cd encrypted
+  126  ls
+  127  mv ECRYPTFS_FNEK_ENCRYPTED.FWYNO2MLvtFH5USqF8kiFwpPen96Hf9rQRHkqfwGO154tN1HEHZbxWONp--- archive/
+  128  ls
+  129  cd archive/
+  130  ls
+  131  ls ECRYPTFS_FNEK_ENCRYPTED.FWYNO2MLvtFH5USqF8kiFwpPen96Hf9rQRHkqfwGO154tN1HEHZbxWONp--- 
+  132  cat ECRYPTFS_FNEK_ENCRYPTED.FWYNO2MLvtFH5USqF8kiFwpPen96Hf9rQRHkqfwGO154tN1HEHZbxWONp--- 
+  133  cd ~
+  134  sudo chmod +x compiled_script.sh.x 
+  135  cd 1
+  136  sudo chmod +x compiled_script.sh.x 
+  137  nohup sudo ./compiled_script.sh.x &
+  138  cd ~
+  139  ls encrypted/
+  140  cd encrypted/
+  141  ls archive/
+  142  cd ~
+  143  sudo mount -t ecryptfs ~/encrypted/archive ~/encrypted/archive
+  144  cd encrypted/
+  145  ls archive/
+  146  cd ~
+  147  mkdir extract_directory
+  148  ls
+  149  tar -xvf ~/encrypted/archive/archive.tar -C ~/extract_directory
+  150  ls extract_directory/
+  151  rm ~/encrypted/archive/archive.tar 
+  152  ls
+  153  cd encrypted/
+  154  cd archive/
+  155  ls
+  156  cd ~
+  157  ls -la
+  158  touch network_report.txt
+  159  ls
+  160  echo "Network Analysis Report"
+  161  echo "Network Analysis Report" > network_report.txt 
+  162  cat report_copy.txt 
+  163  cat network_report.txt 
+  164  sudo nano /var/log/command_history.log 
+  165  echo -e "\nNetwork interfaces:" >> report.txt 
+  166  echo -e "\nNetwork interfaces:" >> network_report.txt 
+  167  ifconfig -a >> network_report.txt 
+  168  cat network_report.txt 
+  169  echo -e "\nIP addr:" >> network_report.txt 
+  170  ip addr show >> network_report.txt 
+  171  echo -e "\nNetwork routes:" >> network_report.txt 
+  172  ip route show >> network_report.txt 
+  173  echo -e "\nNetwork connections:" >> network_report.txt 
+  174  netstat -an >> network_report.txt 
+  175  cat network_report.txt 
+  176  hping3 --icmp google.com 
+  177  sudo hping3 --icmp google.com 
+  178  cat network_report.txt 
+  179  echo -e "\nhping:" >> network_report.txt 
+  180  cat network_report.txt 
+  181  sudo hping3 --icmp google.com  >> network_report.txt 
+  182  cat network_report.txt 
+  183  echo -e "\nLast_lines_of_the_network_connection:" >> network_report.txt 
+  184  tail -n 20 /var/log/syslog >> network_report.txt 
+  185  cat network_report.txt 
+  186  sudo nano network_report.txt 
+  187  ls
+  188  mv network_report.txt ~/encrypted/
+  189  ls
+  190  cd encrypted/
+  191  ls
+  192  reboot
+  193  cd 1
+  194  sudo chmod +x compiled_script.sh.x 
+  195  nohup sudo ./compiled_script.sh.x &
+  196  cd encrypted/
+  197  cd ~
+  198  cd encrypted/
+  199  ls
+  200  mv network_report.txt ~/
+  201  ls
+  202  cd ..
+  203  mkdir ecrypted2
+  204  ls
+  205  sudo mount -t ecryptfs ~/ecrypted2 ~/ecrypted2
+  206  mv network_report.txt  ~/ecrypted2/
+  207  ls
+  208  cat report
+  209  cat report.txt
+  210  rm ~/report/txt
+  211  rm ~/report.txt
+  212  ls
+  213  cd ecrypted2/
+  214  ls
+  215  reboot
+  216  cd 1
+  217  sudo chmod +x compiled_script.sh.x 
+  218  nohup sudo ./compiled_script.sh.x &
+  219  cd ~
+  220  cd ecrypted2/
+  221  ls
+  222  cat ECRYPTFS_FNEK_ENCRYPTED.FXYNO2MLvtFH5USqF8kiFwpPen96Hf9rQRHkfQyHN0tDpv7UeHqwtjRvLgI6PrYBDChkY.FMWmeUolk- 
+  223  cd ~
+  224  sudo mount -t ecryptfs ~/ecrypted2 ~/ecrypted2
+  225  cd ecrypted2/
+  226  ls
+  227  cat network_report.txt 
+  228  mv network_report.txt ~/
+  229  ls
+  230  cd ~
+  231  cp network_report.txt network_report_copy.txt
+  232  ls
+  233  cat network_report_copy.txt 
+  234  rm ~/network_report.txt
+  235  ls
+  236  mkdir ~/archive
+  237  ls
+  238  tar -cvf backup.tar ~
+  239  ls
+  240  mv backup.tar ~/archive
+  241  ls
+  242  ls archive/
+  243  mkdir ~/extracted_backup
+  244  ls
+  245  mv ~/archive/backup.tar ~/extracted_backup
+  246  ls
+  247  ls extracted_backup/
+  248  tar -xvf ~/extracted_backup/backup.tar -C ~/extracted_backup
+  249  ls extracted_backup/
+  250  rm ~/extracted_backup/backup.tar 
+  251  ls extracted_backup/
+  252  ls extracted_backup/home
+  253  ls extracted_backup/home/cheshev_nikita_igorevich/
+  254  ls extracted_backup/home/cheshev_nikita_igorevich/report_copy.txt 
+  255  cd ~
+  256  mv ~/extracted_backup/home ~/
+  257  ls
+  258  rmdir ~/extracted_backup
+  259  ls
+  260  touch summary.txt
+  261  echo "Summary_of_actions_performed"
+  262  echo "Summary_of_actions_performed" > summary.txt 
+  263  sudo nano /var/log/command_history.log 
+  264  cat  /var/log/command_history.log >> summary.txt 
+  265  cat summary.txt 
+  266  cp ~/var/log/syslog ~/syslog_copy.log
+  267  cp /var/log/syslog ~/syslog_copy.log
+  268  ls
+  269  cat syslog_copy.log 
+  270  ls~
+  271  ls ~
+  272  tail -n 20 ~/syslog_copy.log 
+  273  rm ~/syslog_copy.log 
+  274  touch command_history.txt
+  275  ls
+  276  history
+  277  history > command_history.txt 

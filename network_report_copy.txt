@@ -1,0 +1,215 @@
+Network Analysis Report
+
+Network interfaces:
+bond0: flags=5123<UP,BROADCAST,MASTER,MULTICAST>  mtu 1500
+        ether 5a:e1:36:3f:37:14  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.71.129  netmask 255.255.255.0  broadcast 192.168.71.255
+        inet6 fe80::20c:29ff:fe4f:163b  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:4f:16:3b  txqueuelen 1000  (Ethernet)
+        RX packets 21  bytes 2611 (2.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 28  bytes 2909 (2.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 84  bytes 6352 (6.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 84  bytes 6352 (6.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+IP addr:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: ens33: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 00:0c:29:4f:16:3b brd ff:ff:ff:ff:ff:ff
+    altname enp2s1
+    inet 192.168.71.129/24 metric 100 brd 192.168.71.255 scope global dynamic ens33
+       valid_lft 1661sec preferred_lft 1661sec
+    inet6 fe80::20c:29ff:fe4f:163b/64 scope link 
+       valid_lft forever preferred_lft forever
+3: bond0: <NO-CARRIER,BROADCAST,MULTICAST,MASTER,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+    link/ether 5a:e1:36:3f:37:14 brd ff:ff:ff:ff:ff:ff
+
+Network routes:
+default via 192.168.71.2 dev ens33 proto dhcp src 192.168.71.129 metric 100 
+192.168.71.0/24 dev ens33 proto kernel scope link src 192.168.71.129 metric 100 
+192.168.71.2 dev ens33 proto dhcp scope link src 192.168.71.129 metric 100 
+
+Network connections:
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN     
+tcp6       0      0 :::22                   :::*                    LISTEN     
+udp        0      0 127.0.0.54:53           0.0.0.0:*                          
+udp        0      0 127.0.0.53:53           0.0.0.0:*                          
+udp        0      0 192.168.71.129:68       0.0.0.0:*                          
+raw6       0      0 :::58                   :::*                    7          
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  2      [ ]         DGRAM      CONNECTED     14995    
+unix  3      [ ]         DGRAM      CONNECTED     8934     /run/systemd/notify
+unix  3      [ ]         DGRAM      CONNECTED     13527    
+unix  2      [ ACC ]     STREAM     LISTENING     8937     /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     8939     /run/systemd/userdb/io.systemd.DynamicUser
+unix  2      [ ACC ]     STREAM     LISTENING     8940     /run/systemd/io.systemd.ManagedOOM
+unix  2      [ ]         DGRAM      CONNECTED     13355    
+unix  2      [ ]         DGRAM                    15838    /run/user/1000/systemd/notify
+unix  2      [ ACC ]     STREAM     LISTENING     8954     /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     15841    /run/user/1000/systemd/private
+unix  3      [ ]         STREAM     CONNECTED     11180    
+unix  2      [ ACC ]     STREAM     LISTENING     15852    /run/user/1000/bus
+unix  2      [ ]         DGRAM                    8957     /run/systemd/journal/syslog
+unix  2      [ ACC ]     STREAM     LISTENING     8959     /run/systemd/fsck.progress
+unix  2      [ ACC ]     STREAM     LISTENING     15853    /run/user/1000/gnupg/S.dirmngr
+unix  9      [ ]         DGRAM      CONNECTED     8961     /run/systemd/journal/dev-log
+unix  2      [ ACC ]     STREAM     LISTENING     15855    /run/user/1000/gnupg/S.gpg-agent.browser
+unix  3      [ ]         STREAM     CONNECTED     11181    /run/systemd/journal/stdout
+unix  9      [ ]         DGRAM      CONNECTED     8963     /run/systemd/journal/socket
+unix  2      [ ACC ]     STREAM     LISTENING     15857    /run/user/1000/gnupg/S.gpg-agent.extra
+unix  2      [ ACC ]     STREAM     LISTENING     8965     /run/systemd/journal/stdout
+unix  2      [ ACC ]     SEQPACKET  LISTENING     8969     /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     15859    /run/user/1000/gnupg/S.gpg-agent
+unix  3      [ ]         STREAM     CONNECTED     12267    
+unix  2      [ ACC ]     STREAM     LISTENING     15861    /run/user/1000/gnupg/S.keyboxd
+unix  2      [ ACC ]     STREAM     LISTENING     15863    /run/user/1000/pk-debconf-socket
+unix  2      [ ACC ]     STREAM     LISTENING     15865    /run/user/1000/snapd-session-agent.socket
+unix  2      [ ACC ]     STREAM     LISTENING     16973    /run/user/1000/gnupg/S.gpg-agent.ssh
+unix  3      [ ]         STREAM     CONNECTED     12269    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     12015    /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     LISTENING     10978    /run/systemd/journal/io.systemd.journal
+unix  3      [ ]         STREAM     CONNECTED     12192    
+unix  3      [ ]         STREAM     CONNECTED     12196    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     11998    
+unix  3      [ ]         DGRAM      CONNECTED     13528    
+unix  2      [ ]         DGRAM      CONNECTED     11141    
+unix  2      [ ACC ]     STREAM     LISTENING     13599    /run/systemd/resolve/io.systemd.Resolve
+unix  2      [ ACC ]     STREAM     LISTENING     13600    /run/systemd/resolve/io.systemd.Resolve.Monitor
+unix  3      [ ]         STREAM     CONNECTED     14260    
+unix  2      [ ]         DGRAM      CONNECTED     13508    
+unix  3      [ ]         STREAM     CONNECTED     15199    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     15309    /run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM      CONNECTED     14228    
+unix  3      [ ]         STREAM     CONNECTED     14110    
+unix  2      [ ]         DGRAM      CONNECTED     14128    
+unix  2      [ ]         DGRAM                    13992    
+unix  2      [ ACC ]     STREAM     LISTENING     14877    /run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14880    /run/lxd-installer.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14893    /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14895    /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14912    /run/uuidd/request
+unix  2      [ ]         DGRAM      CONNECTED     14194    
+unix  3      [ ]         DGRAM      CONNECTED     8935     
+unix  3      [ ]         STREAM     CONNECTED     14183    
+unix  3      [ ]         STREAM     CONNECTED     14113    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM      CONNECTED     13522    
+unix  2      [ ]         DGRAM      CONNECTED     15698    
+unix  3      [ ]         DGRAM      CONNECTED     8936     
+unix  3      [ ]         STREAM     CONNECTED     15178    /run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     15082    /var/run/vmware/guestServicePipe
+unix  3      [ ]         STREAM     CONNECTED     14996    
+unix  2      [ ]         DGRAM      CONNECTED     10981    
+unix  2      [ ]         DGRAM      CONNECTED     15604    
+unix  3      [ ]         DGRAM      CONNECTED     13529    
+unix  3      [ ]         DGRAM      CONNECTED     12342    
+unix  3      [ ]         STREAM     CONNECTED     15001    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     15595    
+unix  3      [ ]         DGRAM      CONNECTED     13608    
+unix  3      [ ]         STREAM     CONNECTED     16692    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     14999    /run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM      CONNECTED     13610    
+unix  3      [ ]         STREAM     CONNECTED     14997    
+unix  2      [ ]         DGRAM      CONNECTED     12338    
+unix  3      [ ]         STREAM     CONNECTED     15000    /run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM      CONNECTED     13609    
+unix  3      [ ]         STREAM     CONNECTED     11329    /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM      CONNECTED     13607    
+unix  3      [ ]         STREAM     CONNECTED     12332    
+unix  3      [ ]         DGRAM      CONNECTED     13530    
+unix  3      [ ]         DGRAM      CONNECTED     12343    
+unix  3      [ ]         STREAM     CONNECTED     15282    
+unix  3      [ ]         STREAM     CONNECTED     13974    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     13807    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     14948    
+unix  3      [ ]         STREAM     CONNECTED     15114    
+unix  3      [ ]         STREAM     CONNECTED     14242    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     15843    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     16390    
+unix  3      [ ]         STREAM     CONNECTED     16398    
+unix  3      [ ]         STREAM     CONNECTED     16391    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     15788    
+unix  2      [ ]         DGRAM      CONNECTED     15798    
+unix  3      [ ]         STREAM     CONNECTED     15115    /run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     11548    /run/systemd/io.systemd.sysext
+unix  2      [ ]         DGRAM                    14887    
+unix  3      [ ]         STREAM     CONNECTED     15261    
+unix  3      [ ]         STREAM     CONNECTED     15109    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     13770    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     13950    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     13784    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM      CONNECTED     15295    
+unix  3      [ ]         STREAM     CONNECTED     13973    
+unix  3      [ ]         DGRAM      CONNECTED     15839    
+unix  3      [ ]         DGRAM      CONNECTED     15840    
+unix  3      [ ]         STREAM     CONNECTED     14243    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     13948    
+unix  3      [ ]         STREAM     CONNECTED     14857    
+unix  3      [ ]         STREAM     CONNECTED     14837    
+unix  3      [ ]         STREAM     CONNECTED     16397    
+unix  3      [ ]         STREAM     CONNECTED     15791    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM      CONNECTED     15814    
+unix  2      [ ACC ]     STREAM     LISTENING     8956     @/org/kernel/linux/storage/multipathd
+unix  3      [ ]         STREAM     CONNECTED     14141    @9fe045d43016fce6/bus/systemd-logind/system
+unix  3      [ ]         STREAM     CONNECTED     13797    @aa414f97b1cc4381/bus/systemd-network/bus-api-network
+unix  3      [ ]         STREAM     CONNECTED     13795    @d722c9e73126105d/bus/systemd-timesyn/bus-api-timesync
+unix  3      [ ]         STREAM     CONNECTED     15842    @e2aa94ee945a465a/bus/systemd/bus-system
+unix  2      [ ACC ]     STREAM     LISTENING     14879    @ISCSIADM_ABSTRACT_NAMESPACE
+unix  3      [ ]         STREAM     CONNECTED     13937    @37e736f624ced9b8/bus/systemd/bus-api-system
+unix  3      [ ]         STREAM     CONNECTED     13796    @923e3888b25e406b/bus/systemd-resolve/bus-api-resolve
+
+hping:
+HPING google.com (ens33 142.250.181.238): icmp mode set, 28 headers + 0 data bytes
+len=46 ip=142.250.181.238 ttl=128 id=3042 icmp_seq=0 rtt=54.8 ms
+len=46 ip=142.250.181.238 ttl=128 id=3043 icmp_seq=1 rtt=55.6 ms
+len=46 ip=142.250.181.238 ttl=128 id=3044 icmp_seq=2 rtt=55.0 ms
+len=46 ip=142.250.181.238 ttl=128 id=3045 icmp_seq=3 rtt=52.7 ms
+len=46 ip=142.250.181.238 ttl=128 id=3046 icmp_seq=4 rtt=54.5 ms
+len=46 ip=142.250.181.238 ttl=128 id=3047 icmp_seq=5 rtt=53.8 ms
+len=46 ip=142.250.181.238 ttl=128 id=3048 icmp_seq=6 rtt=55.7 ms
+len=46 ip=142.250.181.238 ttl=128 id=3049 icmp_seq=7 rtt=52.8 ms
+
+Last_lines_of_the_network_connection:
+2024-09-08T15:58:09.560927+00:00 server systemd[1]: Starting systemd-tmpfiles-clean.service - Cleanup of Temporary Directories...
+2024-09-08T15:58:09.580105+00:00 server systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+2024-09-08T15:58:09.580339+00:00 server systemd[1]: Finished systemd-tmpfiles-clean.service - Cleanup of Temporary Directories.
+2024-09-08T16:00:19.559122+00:00 server systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+2024-09-08T16:00:19.562833+00:00 server systemd[1]: sysstat-collect.service: Deactivated successfully.
+2024-09-08T16:00:19.562970+00:00 server systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+2024-09-08T16:05:01.126752+00:00 server CRON[17581]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2024-09-08T16:07:49.561704+00:00 server systemd[1]: Starting fwupd-refresh.service - Refresh fwupd metadata and update motd...
+2024-09-08T16:07:49.632217+00:00 server dbus-daemon[1563]: [system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service' requested by ':1.14' (uid=989 pid=19945 comm="/usr/bin/fwupdmgr refresh" label="unconfined")
+2024-09-08T16:07:49.639816+00:00 server systemd[1]: Starting fwupd.service - Firmware update daemon...
+2024-09-08T16:07:49.729471+00:00 server dbus-daemon[1563]: [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service' requested by ':1.15' (uid=0 pid=19950 comm="/usr/libexec/fwupd/fwupd" label="unconfined")
+2024-09-08T16:07:49.736956+00:00 server systemd[1]: Starting upower.service - Daemon for power management...
+2024-09-08T16:07:49.776911+00:00 server dbus-daemon[1563]: [system] Successfully activated service 'org.freedesktop.UPower'
+2024-09-08T16:07:49.777470+00:00 server systemd[1]: Started upower.service - Daemon for power management.
+2024-09-08T16:07:49.843786+00:00 server fwupd[19950]: 16:07:49.842 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:11.0/0000:02:04.0/ata4/host3/target3:0:0/3:0:0:0/block/sr0: failed to open /dev/sr0: No medium found
+2024-09-08T16:07:49.880230+00:00 server fwupd[19950]: 16:07:49.880 FuMain               Daemon ready for requests (locale en_US.UTF-8)
+2024-09-08T16:07:49.881312+00:00 server dbus-daemon[1563]: [system] Successfully activated service 'org.freedesktop.fwupd'
+2024-09-08T16:07:49.881368+00:00 server systemd[1]: Started fwupd.service - Firmware update daemon.
+2024-09-08T16:07:49.907830+00:00 server systemd[1]: fwupd-refresh.service: Deactivated successfully.
+2024-09-08T16:07:49.907890+00:00 server systemd[1]: Finished fwupd-refresh.service - Refresh fwupd metadata and update motd.
